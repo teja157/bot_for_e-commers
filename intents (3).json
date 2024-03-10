@@ -1,0 +1,795 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-) My name is Daz!",
+        "Hello, thanks for visiting. My name is Daz!",
+        "Hi there, My name is Daz!. What can I do for you?",
+        "Hi there, My name is Daz! How can I help?"
+      ]
+    },
+    {
+      "tag": "personal",
+      "patterns": [
+        "How are you?",
+        "How are you doing?",
+        "How is your day?"
+      ],
+      "responses": [
+        "I'm good, all's good, thanks. How about you?"
+      ]
+    },
+            {
+      "tag": "user response",
+      "patterns": [
+        "I'm good",
+        "Im good",
+        "Im doing good",
+        "I am good",
+        "I am okay"
+      ],
+      "responses": [
+        "Great to hear you are doing good."
+      ]
+    },   
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting. Hope I was able to help!",
+        "Have a nice day. Hope I was able to help!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "thx", "thnks"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "What do you offer?",
+        "What can I buy?"
+      ],
+      "responses": [
+        "Search your preference in our flagship store's search bar to see all available products. "
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Cash?",
+        "Are you cash only?",
+        "What are your payment methods?",
+        "How do I pay?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Cash"
+      ]
+    },
+    {
+      "tag": "track",
+      "patterns": [
+        "How can I track my order", 
+        "I want to track my order", 
+        "Can I track my order", 
+        "Track order"
+      ],
+      "responses": [
+        "Visit the order page, click on the specific order, select 'track my order', and check the status"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "Please Tell me about my delivery",
+        "When do I get my delivery?",
+        "Why is my order not delivered yet"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days. Please bear with us!",
+        "Shipping takes 2-4 days.  Please bear with us!"
+      ]
+    },
+    {
+      "tag": "confirm",
+      "patterns": [
+        "My payment was processed successfully but I didn't get any order confirmation. What should I do?",
+        "Payment was completed but no confirmation",
+        "Order was not confirmed",
+        "Money deducted but order is not confirmed"
+      ],
+      "responses": [
+        "Daraz sends you an Email & SMS upon confirmation of your order. If it requires manual confirmation, our team will contact you within 24 hours after order placement. Delay in confirmation SMS may occur due to network error, you may receive it with a delay.",
+        "It takes upto 24 hours for confirmation, please bear with us! Type Need more help for more assistance. "
+      ]
+    },
+    {
+      "tag": "delay",
+      "patterns": [
+        "Why is my order delayed? ",
+        "Did my order get delayed?",
+        "Why is my order not delivered yet?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "We are really sorry if there has been a delay in your order! If your order is within delivery period, We recommend you to please wait during this period since our Delivery Heroes make 3 attempts to deliver your order!",
+        "If your order is past up to 3 days after delivery period, There may be logistic issues causing a delay in delivery. Please type 'Common reasons for delivery delay' to know more about this.",
+        "We appreciate if you could wait for your items as most orders are delivered successfully within this period.",
+        "If your order is past more than 3 days, Since there may be unexpected issues causing delivery delays, you can click on 'Need more Help' for further assistance."
+      ]
+    },
+    {
+      "tag": "reasons",
+      "patterns": [
+        "Common reasons for delivery delay",
+        "common reasons for delivery delay",
+        "reasons for delay",
+        "delivery delay"
+      ],
+      "responses": [
+        "Reasons include Seller Sourcing Issues, Courier Issues, Cross Border shipment delay, Wrong Address or Phone Number, and Unavailability of Customer. "
+      ]
+    },
+    {
+      "tag": "more",
+      "patterns": [
+        "Need more help",
+        "help me more",
+        "can I talk to an agent",
+        "can I call customer service",
+        "customer support number",
+        "how to contact customer service",
+        "customer service number",
+        "contact number for help",
+        "helpline number",
+        "How to become a seller",
+        "How to contact a seller"
+      ],
+      "responses": [
+        "Contact us for further information here: Phone: 021-111-132729. Timings are from 09:00 AM to 05:00 PM from Monday to Saturday."
+      ]
+    },
+    {
+      "tag": "cancel",
+      "patterns": [
+        "Can I cancel my order?",
+        "Why is my order cancelled?",
+        "How do I can cancel my order",
+        "Can I cancel an order"
+      ],
+      "responses": [
+        "Order can only be cancelled within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check status of specific orders."
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "Can I refund an item.",
+        "I want to refund an item",
+        "can I refund my order",
+        "Are refunds available"
+      ],
+      "responses": [
+        "Refund can only be issued within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check for specific orders."
+      ]
+    },
+    {
+      "tag": "refund status",
+      "patterns": [
+        "Why is the status Refunded when it's not credited?",
+        "No refund even though status is refunded",
+        "No refund when status says refunded",
+        "I did not receive my refund money",
+        "Refund money not received"
+      ],
+      "responses": [
+        "Please be patient as refunds take upto 30 days to receive into bank. "
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "Can I refund an item.",
+        "I want to refund an item",
+        "can I refund my order",
+        "Are refunds available"
+      ],
+      "responses": [
+        "Refund can only be issued within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check for specific orders."
+      ]
+    },
+    {
+      "tag": "return",
+      "patterns": [
+        "How long do return items take",
+        "When will my items be returned",
+        "When can I get a refund for return items?",
+        "Are refunds available for return?"
+      ],
+      "responses": [
+        "Return takes 6 to 10 business days. There are 2 parts to the return process. In the first part, we check the items received from you to verify the issue highlighted in your return claim. Once we've verified and accepted your return, we initiate the refund process which takes 1 business day for Daraz wallet and 2-10 business days for bank or card. "
+      ]
+    },
+    {
+      "tag": "withdraw refunds",
+      "patterns": [
+        "How to withdraw refunds from wallet?",
+        "Withdraw funds",
+        "Can I withdraw refunds"
+      ],
+      "responses": [
+        "Withdrawing refunds from your wallet is very easy. Please follow the steps below: Step 1: Click on the 'Wallet' icon on the top right corner of the Daraz App, or click here. Step 2: Click on the 'Balance Details' Icon. Step 3: Click on 'Withdraw' button. Step 4: Enter your bank account details and click 'Withdraw'. Step 5: You will receive a verification email, click confirm to initiate your withdrawal request."
+      ]
+    },
+    {
+      "tag": "order status",
+      "patterns": [
+        "What is my order status",
+        "I want to know my return status",
+        "How to return status"
+      ],
+      "responses": [
+        "Please visit the My Orders page for a list of your confirmed orders."
+      ]
+    },
+    {
+      "tag": "use voucher",
+      "patterns": [
+        "How to use a voucher?",
+        "Can I use a voucher?",
+        "How to use a voucher?"
+      ],
+      "responses": [
+        "You can add a voucher by clicking on My Cart > Check Out > Enter Voucher Code > APPLY. "
+      ]
+    },
+        {
+      "tag": "profile info",
+      "patterns": [
+        "How can I change my profile information",
+        "I want to change my password",
+        "I want to change my phone number",
+        "I want to change my address",
+        "I want to Reset my password",
+        "I want to delete my account",
+        "delete my account"
+      ],
+      "responses": [
+        "You can easily add or change your account details by following the steps below: Step 1: Click on 'Account', Step 2: Click on 'Manage my account' from the icon, Step 3: You change or edit your name, address, email address, mobile number, etc., Step 4: Fill in the required details, and click on Save. Note: You can also change your delivery address from the Checkout page before proceeding to pay."
+      ]
+    },
+        {
+      "tag": "mobile app",
+      "patterns": [
+        "Can I download a mobile app for this?",
+        "Mobile app",
+        "Download mobile app"
+      ],
+      "responses": [
+        "You can download the Daraz Mobile App from both IOS App Store, and Google Play Store. "
+      ]
+    }, 
+    {
+      "tag": "product_info",
+      "patterns": [
+        "Tell me about this product",
+        "What are the details of this item?",
+        "Product information",
+        "Details of this product"
+      ],
+      "responses": [
+        "Sure! Please provide the name or ID of the product you're interested in, and I'll fetch the details for you."
+      ]
+    },
+    {
+      "tag": "product_search",
+      "patterns": [
+        "Can you help me find a product?",
+        "I'm looking for something specific",
+        "Find a product for me"
+      ],
+      "responses": [
+        "Of course! What type of product are you looking for? Please provide some details so I can assist you better."
+      ]
+    },
+    {
+      "tag": "product_details",
+      "patterns": [
+        "What are the features of this product?",
+        "Can you tell me more about this item?",
+        "Give me details of this product"
+      ],
+      "responses": [
+        "Once you find a product you're interested in, click on it to view its details such as description, specifications, reviews, and more."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": [
+        "Is this product in stock?",
+        "Can I buy this item right now?",
+        "Availability of this product"
+      ],
+      "responses": [
+        "To check the availability of a product, simply visit its page and look for the 'In Stock' or 'Out of Stock' indicator."
+      ]
+    },
+    {
+      "tag": "product_price",
+      "patterns": [
+        "How much does this product cost?",
+        "What is the price of this item?",
+        "Price details"
+      ],
+      "responses": [
+        "You can find the price of the product listed on its page. Prices may vary based on promotions, discounts, and sellers."
+      ]
+    },
+    {
+      "tag": "product_reviews",
+      "patterns": [
+        "Are there any reviews for this product?",
+        "What do customers say about this item?",
+        "Product ratings and reviews"
+      ],
+      "responses": [
+        "Customers often leave reviews and ratings for products. You can find them on the product's page to help you make an informed decision."
+      ]
+    },
+    {
+      "tag": "product_recommendation",
+      "patterns": [
+        "Can you recommend a product for me?",
+        "I need suggestions on what to buy",
+        "Product recommendations"
+      ],
+      "responses": [
+        "Sure! Could you please specify what type of product you're interested in, or any preferences you have? That way, I can suggest something suitable for you."
+      ]
+    },
+    {
+      "tag": "product_categories",
+      "patterns": [
+        "What categories of products do you have?",
+        "Show me different product categories",
+        "Browse product categories"
+      ],
+      "responses": [
+        "We offer a wide range of product categories including electronics, fashion, home & living, beauty, and more. You can explore them by browsing through our website or app."
+      ]
+    },
+    {
+      "tag": "product_warranty",
+      "patterns": [
+        "Does this product come with a warranty?",
+        "What is the warranty period for this item?",
+        "Warranty details"
+      ],
+      "responses": [
+        "Many of our products come with a manufacturer's warranty. You can find the warranty details listed on the product page."
+      ]
+    },
+    {
+      "tag": "product_shipping",
+      "patterns": [
+        "How long does shipping take for this product?",
+        "When will I receive this item after ordering?",
+        "Shipping details"
+      ],
+      "responses": [
+        "Shipping times may vary based on your location and the seller. You can find estimated delivery times listed on the product page or during checkout."
+      ]
+    },
+    {
+      "tag": "product_size",
+      "patterns": [
+        "What sizes are available for this product?",
+        "Does this item come in different sizes?",
+        "Size options"
+      ],
+      "responses": [
+        "Size availability depends on the product. You can find available sizes listed on the product page if applicable."
+      ]
+    },
+    {
+      "tag": "product_color",
+      "patterns": [
+        "What colors are available for this product?",
+        "Does this item come in different colors?",
+        "Color options"
+      ],
+      "responses": [
+        "Color availability depends on the product. You can find available colors listed on the product page if applicable."
+      ]
+    },
+    {
+      "tag": "product_material",
+      "patterns": [
+        "What material is this product made of?",
+        "Material details",
+        "Composition"
+      ],
+      "responses": [
+        "Product materials are usually listed on the product page. If you need more information, feel free to ask!"
+      ]
+    },
+    {
+      "tag":"tell about the i phone 14",
+      "patterns":[
+        "what is the ram of iphone14?",
+        "Is this product in stock?",
+        "Can I buy this item right now?"
+      ],
+      "responses":[
+        "6GB ram",
+        "yes is there in stock",
+        "yes right now you can buy"
+
+      ]
+    },
+      {
+        "tag":"hp latop data",
+        "patterns":[
+          "present version of hp latop?"
+        ],
+        "responses":[
+        "i7 laptop"
+        ]
+
+      },
+      {
+        "tag": "hp_laptop_data",
+        "patterns": [
+            "What are the different series of HP laptops?",
+            "Can you tell me about the latest HP laptops?",
+            "What are the specifications of HP laptops?"
+        ],
+        "responses": [
+            {
+                "series": "HP Spectre",
+                "description": "High-end premium laptops with sleek design and powerful performance.",
+                "processor": "Intel Core i7 or i9",
+                "display": "13.3-inch to 15.6-inch OLED or IPS touchscreen displays",
+                "memory": "Up to 32GB RAM",
+                "storage": "Up to 2TB SSD",
+                "graphics": "Integrated Intel Iris Xe Graphics or dedicated NVIDIA GeForce GTX or RTX graphics",
+                "price_range": "$1000 - $3000+"
+            },
+            {
+                "series": "HP Envy",
+                "description": "Mid-range laptops with a balance of performance and affordability.",
+                "processor": "Intel Core i5 or i7",
+                "display": "13.3-inch to 15.6-inch Full HD or 4K displays",
+                "memory": "Up to 16GB RAM",
+                "storage": "Up to 1TB SSD",
+                "graphics": "Integrated Intel UHD Graphics or dedicated NVIDIA GeForce MX graphics",
+                "price_range": "$700 - $1500+"
+            },
+            {
+                "series": "HP Pavilion",
+                "description": "Entry-level laptops suitable for everyday use.",
+                "processor": "Intel Core i3, i5, or AMD Ryzen processors",
+                "display": "14-inch to 15.6-inch HD or Full HD displays",
+                "memory": "Up to 16GB RAM",
+                "storage": "Up to 512GB SSD or 1TB HDD",
+                "graphics": "Integrated Intel UHD Graphics or AMD Radeon Graphics",
+                "price_range": "$400 - $1000+"
+            }
+        ]
+    },
+    {
+      "tag": "hp_phone_data",
+      "patterns": [
+          "What are the different HP phone models?",
+          "Can you tell me about HP's latest smartphones?",
+          "What are the specifications of HP phones?"
+      ],
+      "responses": [
+          {
+              "model": "HP Elite x3",
+              "description": "Flagship business smartphone with productivity-focused features.",
+              "display": "5.96-inch Quad HD AMOLED display",
+              "processor": "Qualcomm Snapdragon 820",
+              "memory": "4GB RAM",
+              "storage": "64GB internal storage, expandable via microSD",
+              "camera": "16MP rear camera, 8MP front camera",
+              "battery": "4150mAh",
+              "price": "$699 (at launch)"
+          },
+          {
+              "model": "HP Pre 3",
+              "description": "QWERTY-slider smartphone running on webOS.",
+              "display": "3.6-inch WVGA touchscreen display",
+              "processor": "Qualcomm Snapdragon S2",
+              "memory": "512MB RAM",
+              "storage": "8GB or 16GB internal storage",
+              "camera": "5MP rear camera, VGA front camera",
+              "battery": "1230mAh",
+              "price": "$399 (at launch)"
+          }
+      ]
+  },
+  {
+    "tag": "smartphone_data",
+    "patterns": [
+        "What are the latest smartphone models from different companies?",
+        "Can you provide information about smartphones from various brands?",
+        "What are the specifications of popular smartphones?"
+    ],
+    "responses": [
+        {
+            "company": "Realme",
+            "models": [
+                {
+                    "model": "Realme 8 Pro",
+                    "description": "Mid-range smartphone with a focus on camera performance.",
+                    "display": "6.4-inch Super AMOLED display",
+                    "processor": "Qualcomm Snapdragon 720G",
+                    "memory": "6GB or 8GB RAM",
+                    "storage": "128GB internal storage, expandable via microSD",
+                    "camera": "108MP quad-camera setup",
+                    "battery": "4500mAh",
+                    "price": "$279 (at launch)"
+                },
+                {
+                    "model": "Realme GT",
+                    "description": "Flagship smartphone with high-end specifications.",
+                    "display": "6.43-inch Super AMOLED display",
+                    "processor": "Qualcomm Snapdragon 888",
+                    "memory": "8GB or 12GB RAM",
+                    "storage": "128GB or 256GB internal storage",
+                    "camera": "64MP triple-camera setup",
+                    "battery": "4500mAh",
+                    "price": "$499 (at launch)"
+                }
+            ]
+        },
+        {
+            "company": "Apple",
+            "models": [
+                {
+                    "model": "iPhone 13 Pro",
+                    "description": "High-end smartphone with advanced camera and performance.",
+                    "display": "6.1-inch Super Retina XDR display",
+                    "processor": "Apple A15 Bionic",
+                    "memory": "6GB RAM",
+                    "storage": "128GB, 256GB, 512GB, or 1TB internal storage",
+                    "camera": "12MP triple-camera setup with LiDAR scanner",
+                    "battery": "Not specified",
+                    "price": "$999 (starting)"
+                },
+                {
+                    "model": "iPhone SE (2022)",
+                    "description": "Budget-friendly iPhone with compact design.",
+                    "display": "4.7-inch Retina HD display",
+                    "processor": "Apple A15 Bionic",
+                    "memory": "4GB RAM",
+                    "storage": "64GB, 128GB, or 256GB internal storage",
+                    "camera": "12MP single-camera setup",
+                    "battery": "Not specified",
+                    "price": "$429 (starting)"
+                }
+            ]
+        },
+        {
+            "company": "Xiaomi (Redmi)",
+            "models": [
+                {
+                    "model": "Redmi Note 11 Pro+ 5G",
+                    "description": "Mid-range 5G smartphone with a focus on performance and battery life.",
+                    "display": "6.67-inch Super AMOLED display",
+                    "processor": "Qualcomm Snapdragon 695",
+                    "memory": "6GB or 8GB RAM",
+                    "storage": "128GB or 256GB internal storage, expandable via microSD",
+                    "camera": "108MP quad-camera setup",
+                    "battery": "5000mAh",
+                    "price": "$349 (at launch)"
+                },
+                {
+                    "model": "Redmi 10",
+                    "description": "Affordable smartphone with a large display and battery.",
+                    "display": "6.5-inch IPS LCD display",
+                    "processor": "MediaTek Helio G88",
+                    "memory": "4GB or 6GB RAM",
+                    "storage": "64GB or 128GB internal storage, expandable via microSD",
+                    "camera": "50MP quad-camera setup",
+                    "battery": "6000mAh",
+                    "price": "$199 (at launch)"
+                }
+            ]
+        }
+    ]
+},
+{
+  "tag": "laptop_data",
+  "patterns": [
+      "What are the latest laptop models from different companies?",
+      "Can you provide information about laptops from various brands?",
+      "What are the specifications of popular laptops?"
+  ],
+  "responses": [
+      {
+          "company": "Dell",
+          "models": [
+              {
+                  "model": "Dell XPS 15",
+                  "description": "High-performance laptop with a stunning display and sleek design.",
+                  "processor": "Intel Core i5, i7, or i9",
+                  "display": "15.6-inch 4K UHD touchscreen display",
+                  "memory": "Up to 64GB RAM",
+                  "storage": "Up to 4TB SSD",
+                  "graphics": "Integrated Intel UHD Graphics or NVIDIA GeForce GTX or RTX graphics",
+                  "price": "$1,299 (starting)"
+              },
+              {
+                  "model": "Dell Inspiron 15",
+                  "description": "Versatile laptop for everyday use and entertainment.",
+                  "processor": "Intel Core i3, i5, or i7",
+                  "display": "15.6-inch Full HD touchscreen display",
+                  "memory": "Up to 16GB RAM",
+                  "storage": "Up to 1TB SSD or 2TB HDD",
+                  "graphics": "Integrated Intel UHD Graphics or NVIDIA GeForce MX graphics",
+                  "price": "$499 (starting)"
+              }
+          ]
+      },
+      {
+          "company": "HP",
+          "models": [
+              {
+                  "model": "HP Spectre x360",
+                  "description": "Premium convertible laptop with excellent build quality and performance.",
+                  "processor": "Intel Core i5 or i7",
+                  "display": "13.3-inch or 15.6-inch Full HD or 4K touchscreen display",
+                  "memory": "Up to 16GB RAM",
+                  "storage": "Up to 2TB SSD",
+                  "graphics": "Integrated Intel Iris Xe Graphics or NVIDIA GeForce MX graphics",
+                  "price": "$1,099 (starting)"
+              },
+              {
+                  "model": "HP Pavilion",
+                  "description": "Affordable laptop with decent performance for everyday tasks.",
+                  "processor": "Intel Core i3, i5, or i7",
+                  "display": "14-inch or 15.6-inch HD or Full HD display",
+                  "memory": "Up to 16GB RAM",
+                  "storage": "Up to 1TB SSD or 2TB HDD",
+                  "graphics": "Integrated Intel UHD Graphics or AMD Radeon Graphics",
+                  "price": "$399 (starting)"
+              }
+          ]
+      },
+      {
+          "company": "Lenovo",
+          "models": [
+              {
+                  "model": "Lenovo ThinkPad X1 Carbon",
+                  "description": "Premium business laptop known for its durability and performance.",
+                  "processor": "Intel Core i5 or i7",
+                  "display": "14-inch Full HD or 4K touchscreen display",
+                  "memory": "Up to 32GB RAM",
+                  "storage": "Up to 2TB SSD",
+                  "graphics": "Integrated Intel UHD Graphics or NVIDIA GeForce MX graphics",
+                  "price": "$1,399 (starting)"
+              },
+              {
+                  "model": "Lenovo Ideapad",
+                  "description": "Budget-friendly laptop suitable for students and casual users.",
+                  "processor": "Intel Core i3, i5, or i7",
+                  "display": "15.6-inch HD or Full HD display",
+                  "memory": "Up to 12GB RAM",
+                  "storage": "Up to 1TB HDD or 512GB SSD",
+                  "graphics": "Integrated Intel UHD Graphics or AMD Radeon Graphics",
+                  "price": "$349 (starting)"
+              }
+          ]
+      }
+  ]
+},
+{
+  "tag": "redmi_phone_data",
+  "patterns": [
+      "Tell me about the latest Redmi phones.",
+      "What are the specifications of Redmi smartphones?",
+      "Can you provide information about Redmi mobiles?"
+  ],
+  "responses": [
+      {
+          "model": "Redmi Note 11 Pro",
+          "description": "Mid-range smartphone with a focus on camera and performance.",
+          "display": "6.67-inch Super AMOLED display",
+          "processor": "Qualcomm Snapdragon 695",
+          "memory": "6GB or 8GB RAM",
+          "storage": "128GB or 256GB internal storage, expandable via microSD",
+          "camera": "108MP quad-camera setup",
+          "battery": "5000mAh",
+          "price": "$349 (at launch)"
+      },
+      {
+          "model": "Redmi 10",
+          "description": "Affordable smartphone with a large display and battery.",
+          "display": "6.5-inch IPS LCD display",
+          "processor": "MediaTek Helio G88",
+          "memory": "4GB or 6GB RAM",
+          "storage": "64GB or 128GB internal storage, expandable via microSD",
+          "camera": "50MP quad-camera setup",
+          "battery": "6000mAh",
+          "price": "$199 (at launch)"
+      },
+      {
+          "model": "Redmi K40",
+          "description": "Flagship killer with high-end specifications.",
+          "display": "6.67-inch AMOLED display",
+          "processor": "Qualcomm Snapdragon 870",
+          "memory": "6GB, 8GB, or 12GB RAM",
+          "storage": "128GB or 256GB internal storage",
+          "camera": "48MP triple-camera setup",
+          "battery": "4520mAh",
+          "price": "$399 (at launch)"
+      }
+  ]
+},
+{
+  "tag": "realme_phone_data",
+  "patterns": [
+      "What are the latest Realme smartphone models?",
+      "Can you provide information about Realme phones?",
+      "What are the specifications of popular Realme smartphones?"
+  ],
+  "responses": [
+      {
+          "model": "Realme 9 Pro+",
+          "description": "Flagship-level smartphone with a focus on camera performance and battery life.",
+          "display": "6.7-inch Super AMOLED display with 120Hz refresh rate",
+          "processor": "Qualcomm Snapdragon 8 Gen 1",
+          "memory": "8GB or 12GB RAM",
+          "storage": "128GB or 256GB internal storage, expandable via microSD",
+          "camera": "108MP quad-camera setup",
+          "battery": "5000mAh",
+          "price": "$499 (at launch)"
+      },
+      {
+          "model": "Realme GT 2 Pro",
+          "description": "High-performance flagship smartphone with premium design and features.",
+          "display": "6.7-inch Super AMOLED display with 120Hz refresh rate",
+          "processor": "Qualcomm Snapdragon 8 Gen 1",
+          "memory": "8GB or 12GB RAM",
+          "storage": "128GB, 256GB, or 512GB internal storage",
+          "camera": "50MP triple-camera setup",
+          "battery": "5000mAh",
+          "price": "$699 (at launch)"
+      },
+      {
+          "model": "Realme 8i",
+          "description": "Mid-range smartphone with a focus on display quality and performance.",
+          "display": "6.6-inch IPS LCD display with 120Hz refresh rate",
+          "processor": "MediaTek Helio G96",
+          "memory": "4GB or 6GB RAM",
+          "storage": "64GB or 128GB internal storage, expandable via microSD",
+          "camera": "50MP triple-camera setup",
+          "battery": "5000mAh",
+          "price": "$199 (at launch)"
+      }
+  ]
+}
+  
+  ]
+}
