@@ -8,10 +8,10 @@ import pickle
 from keras.models import load_model
 
 # Set NLTK data path
-nltk.data.path.append("/path/to/nltk_data")  # Replace "/path/to/nltk_data" with the path to your NLTK data directory
+nltk.download()
 
 model = load_model('chatbot_model.h5')
-intents = json.loads(open('c:/Users/Eswar Teja/onedrive/desktop/teja/teja/intents (1).json').read())
+intents = json.loads(open('intents (3).json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 lemmatizer = WordNetLemmatizer()
